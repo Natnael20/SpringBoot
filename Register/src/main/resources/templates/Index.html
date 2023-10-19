@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello world</title>
+</head>
+<style>
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 100vh;
+	}
+</style>
+<body>
+     <div class="container">
+		<div class="content">
+			<h1>Login</h1>
+			<form th:action="@{/login}" method="get">
+		        <label for="username">Username:</label>
+		        <input type="text" id="username" name="username" required><br><br>
+		        <label for="password">Password:</label>
+		        <input type="password" id="password" name="password" required><br><br>
+		        <button type="submit">Log In</button>
+		    </form>
+		</div>
+	 </div>
+</body>
+</html>
